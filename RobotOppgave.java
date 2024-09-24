@@ -10,8 +10,13 @@ class Verden {
 }
 
 class Robot {
+    String Robotnavn;
+    double Batterinivaa;
+    double Parkavstand;
+    Strig Bottype;
     // gi robotten 4 attributter: navn, batteriNivaa, avstandTilParken og botType
 
+    System.out.println("Dette er "+Robotnavn+" av type "+Bottype+"."+"/n"+"Denne enheten har "+Batterinivaa+" Batterikapasitet igjen og bor "+Parkavstand+" meter fra parken.")
     // ENdre metoden slik at den retunerer en tekst streng som forklarer statusen til roboten
     // eksempel: Dette er bot Dancatron 4000 av type B-Bot.
     // Denne enheten har 80.0 batterikapasitet igjen og bor 1500 meter fra parken.
@@ -25,6 +30,7 @@ class Robot {
 
         // Sjekk om det regner
         if (verden.regner){
+            System.out.Println("Det regner, "+robotnavn+"kan ikke gå tur i parken idag")
             // skriv ut hvorfor boten ikke kan gå i parken med System.out.println
             return false;
         }
